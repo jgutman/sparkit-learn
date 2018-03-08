@@ -182,7 +182,7 @@ class SparkCountVectorizer(CountVectorizer, SparkBroadcasterMixin):
                     continue
             indptr.append(len(j_indices))
 
-        j_indices = frombuffer_empty(j_indices, dtype=np.intc)
+        j_indices = np.frombuffer(j_indices, dtype=np.intc)
         indptr = np.frombuffer(indptr, dtype=np.intc)
         values = np.ones(len(j_indices))
 

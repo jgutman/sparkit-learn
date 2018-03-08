@@ -4,7 +4,8 @@ import numbers
 import time
 import warnings
 
-from sklearn.cross_validation import FitFailedWarning, KFold
+from sklearn.model_selection import KFold
+from sklearn.exceptions import FitFailedWarning
 from sklearn.externals.joblib import logger
 from sklearn.utils.validation import _num_samples
 

@@ -6,7 +6,8 @@ from collections import Sized
 import numpy as np
 from sklearn.base import clone
 from sklearn.externals.joblib import Parallel, delayed
-from sklearn.model_selection import GridSearchCV, ParameterGrid, _CVScoreTuple
+from sklearn.model_selection import GridSearchCV, ParameterGrid
+from sklearn.model_selection._search import _CVScoreTuple
 from sklearn.metrics.scorer import check_scoring
 from splearn.base import SparkBaseEstimator
 from splearn.cross_validation import _check_cv, _fit_and_score
