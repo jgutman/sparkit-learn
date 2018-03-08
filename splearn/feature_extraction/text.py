@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import (CountVectorizer,
                                              TfidfTransformer,
                                              _document_frequency,
                                              _make_int_array)
-from sklearn.utils.fixes import frombuffer_empty
+#from sklearn.utils.fixes import frombuffer_empty
 from sklearn.utils.validation import check_is_fitted
 
 from ..base import SparkBroadcasterMixin
